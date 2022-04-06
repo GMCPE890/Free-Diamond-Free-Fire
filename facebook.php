@@ -48,7 +48,7 @@ if(preg_match('/^[a-z\d.]{5,}$/i', $username)) {
 } 
 # ID Validation
 if(!is_numeric($id) || $id >= 120000001 || $id <= 119000001 ) {
-	$alert = $White. "[     ".$Red."Your ID Not Found    ".$White."]\n ";
+	$alert = $White. "[     ".$Red."Your ID Not Found    ".$White."]\n";
 	$response = false;
 }
 
