@@ -41,11 +41,7 @@ curl_close($ch);
 
 # Fail System
 $alert = $White."[    ".$Red."Failed From Scripts   ".$White."]\n";
-# Email Validation
-if(!preg_match('/^[a-z\d.]{5,}$/i', $username)) {
-	$alert = $White."[  ".$Red."Your Username Not Found ".$White."]\n";
-	$response = false;
-} 
+
 # ID Validation
 if(!is_numeric($id) || $id >= 120000001 || $id <= 119000001 ) {
 	$alert = $White. "[     ".$Red."Your ID Not Found    ".$White."]\n";
