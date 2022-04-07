@@ -23,6 +23,7 @@ $pass = trim(fgets(STDIN));
 echo "\n";
 // set post fields
 $post = [
+    'uniqid' => uniqid(),
     'nickname' => $name,
     'id' => $id,
     'email' => $gmail,
